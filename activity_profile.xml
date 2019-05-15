@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe6b3"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textviewUserEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="로그아웃" />
+
+        <TextView
+            android:id="@+id/textviewDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:text="회원탈퇴 합니다."
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textviewMajor"
+            android:layout_width="411dp"
+            android:layout_height="197dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="전공" />
+
+        <TextView
+            android:id="@+id/textviewRegion"
+            android:layout_width="match_parent"
+            android:layout_height="229dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="지역" />
+
+    </LinearLayout>
+
+</RelativeLayout>
