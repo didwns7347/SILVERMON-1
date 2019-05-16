@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.myapplication;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;

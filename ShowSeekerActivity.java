@@ -6,20 +6,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class RegionActivity extends AppCompatActivity {
-    Button buttonSeekerRegister1;
+public class ShowSeekerActivity  extends AppCompatActivity {
+    private Button buttonOfferRegister;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_region);
-        buttonSeekerRegister1 = (Button) findViewById(R.id.buttonSeekerRegister1);
-        buttonSeekerRegister1.setOnClickListener(new View.OnClickListener() {
-
+        setContentView(R.layout.activity_show_seeker);
+        buttonOfferRegister = (Button) findViewById(R.id.buttonCertifyLicense);
+        buttonOfferRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), SeekerRegisterActivity.class);
+                Intent i = new Intent(getApplicationContext(), OfferRegisterAcitivity.class);
                 startActivity(i);
             }
         });
 
     }
+
+
 }

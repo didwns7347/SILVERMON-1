@@ -11,4 +11,12 @@
         android:layout_height="wrap_content"
         android:text="군인/교사"
         android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/buttonSeekerRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="구직등록버튼"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="147dp" />
 </android.support.constraint.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.myapplication;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -25,6 +25,8 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     //view objects
     private TextView textViewUserEmail;
     private Button buttonLogout;
+    private TextView tvseeker;
+    private TextView tvoffer;
     private TextView textivewDelete;
     private TextView textviewMajor;
     private TextView textviewRegion;
@@ -39,8 +41,10 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         textViewUserEmail = (TextView) findViewById(R.id.textviewUserEmail);
         buttonLogout = (Button) findViewById(R.id.buttonLogout);
         textivewDelete = (TextView) findViewById(R.id.textviewDelete);
-        textviewRegion = (TextView) findViewById(R.id.textviewRegion);
-        textviewMajor = (TextView) findViewById(R.id.textviewMajor);
+        textviewRegion = (TextView) findViewById(R.id.textviewSeekerRegister);
+        textviewMajor = (TextView) findViewById(R.id.textviewOfferRegister);
+        tvoffer=(TextView) findViewById(R.id.textviewOfferRegister);
+        tvseeker=(TextView) findViewById(R.id.textviewSeekerRegister);
 
         //initializing firebase authentication object
         firebaseAuth = FirebaseAuth.getInstance();
@@ -69,8 +73,16 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View view) {
         if (view == buttonLogout) {
             firebaseAuth.signOut();
-            finish();
+
             startActivity(new Intent(this, LoginActivity.class));
+        }
+        if(view == tvseeker){//구직하기 버튼 누르면 이동
+
+            startActivity(new Intent(this,SelectActivity.class));
+        }
+        if(view == tvoffer){//구인하기 버튼 누르면 이동
+
+            startActivity(new Intent(this,ShowSeekerActivity.class));
         }
         //회원탈퇴를 클릭하면 회원정보를 삭제한다. 삭제전에 컨펌창을 하나 띄워야 겠다.
         if(view == textivewDelete) {
@@ -98,12 +110,6 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
                 }
             });
             alert_confirm.show();
-        }
-        if(view == textviewMajor) {
-            startActivity(new Intent(this, MajorActivity.class));
-        }
-        if(view == textviewRegion){
-            startActivity(new Intent(this, RegionActivity.class));
         }
 
         }

@@ -37,20 +37,20 @@
             android:textColor="@color/colorAccent" />
 
         <TextView
-            android:id="@+id/textviewMajor"
+            android:id="@+id/textviewOfferRegister"
             android:layout_width="411dp"
             android:layout_height="197dp"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal|center_vertical"
-            android:text="전공" />
+            android:text="구인" />
 
         <TextView
-            android:id="@+id/textviewRegion"
+            android:id="@+id/textviewSeekerRegister"
             android:layout_width="match_parent"
             android:layout_height="229dp"
             android:layout_gravity="center_horizontal"
             android:gravity="center_horizontal|center_vertical"
-            android:text="지역" />
+            android:text="구직" />
 
     </LinearLayout>
 
