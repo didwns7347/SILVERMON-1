@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.example.silvermon.IntroActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+
+            android:hint="이름을 입력해주세요"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+             />
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="실버몬 아이디를 입력해주세요"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/addr"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="주소를 입력해 주세요"
+            android:inputType="textPassword"
+            android:padding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="생년월일을 입력해 주세요ex)950612"
+            android:inputType="number"
+            android:padding="10dp"/>
+
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="성별을 입력해 주세요"
+            android:inputType="number"
+            android:padding="10dp"/>
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="이력서 제출하기"
+            android:onClick="submit"
+            />
+
+
+        <!-- Link to Login Screen -->
+
+
+    </LinearLayout>
+
+</LinearLayout>

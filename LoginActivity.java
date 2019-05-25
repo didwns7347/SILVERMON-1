@@ -1,4 +1,4 @@
-package com.example.test;
+package com.example.silvermon;
 
 import android.app.ProgressDialog;
 import android.content.Intent;

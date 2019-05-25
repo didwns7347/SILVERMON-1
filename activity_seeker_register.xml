@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/Seekername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이름을 입력해 주세요"
+            android:inputType="text"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/Seekerage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="생년 월일을 입력해 주세요ex)19950612"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Seekeraddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="주소를 입력해 주세요"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Seekergender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="성별을 입력해 주세요"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Seekerpnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="휴대전화 번호를 입력해 주세요"
+            android:inputType="text" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Seekermajor"
+            android:hint="당신의 은퇴전 직업을 입력하세요"/>
+
+        <Button
+            android:id="@+id/buttonSeekerRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="구직 등록하는 버튼입니다." />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
